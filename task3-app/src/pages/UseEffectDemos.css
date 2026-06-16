@@ -1,0 +1,65 @@
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.demo-card {
+  background: #1a1c24;
+  border: 1px solid #2a2c35;
+  border-radius: 12px;
+  padding: 1.75rem;
+  position: relative;
+}
+
+.demo-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #8a8fff;
+  background: rgba(138, 143, 255, 0.12);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: 0.75rem;
+}
+
+.demo-note {
+  color: #9b9ba5;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.demo-note code {
+  background: #25272f;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  color: #d8d6ff;
+  font-size: 0.85em;
+}
+
+.demo-card h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #f5f3ee;
+}
+
+.demo-card p {
+  color: #f5f3ee;
+  margin: 0;
+}
+
+.counter-demo h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.4rem;
+  margin: 0 0 0.5rem;
+}
+
+@media (max-width: 760px) {
+  .demo-grid {
+    grid-template-columns: 1fr;
+  }
+}
